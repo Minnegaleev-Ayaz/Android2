@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Profile"/>
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Settings"/>
+    <item
+        android:id="@+id/trainingFragment"
+        android:icon="@drawable/baseline_run_circle_24"
+        android:title="Training"/>
+    <item
+        android:id="@+id/healthStutsFragment"
+        android:icon="@drawable/baseline_monitor_heart_24"
+        android:title="HealthStatus"/>
+
+</menu>

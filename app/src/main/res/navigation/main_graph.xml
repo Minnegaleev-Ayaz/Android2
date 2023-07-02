@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph.xml"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.secondtask.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_technicalFragment2"
+            app:destination="@id/technicalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/healthStutsFragment"
+        android:name="com.example.secondtask.HealthStutsFragment"
+        android:label="fragment_health_stuts"
+        tools:layout="@layout/fragment_health_stuts" >
+        <action
+            android:id="@+id/action_healthStutsFragment_to_technicalFragment"
+            app:destination="@id/technicalFragment" />
+        <action
+            android:id="@+id/action_healthStutsFragment_to_technicalFragment2"
+            app:destination="@id/technicalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.secondtask.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_technicalFragment"
+            app:destination="@id/technicalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.secondtask.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_technicalFragment"
+            app:destination="@id/technicalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trainingFragment"
+        android:name="com.example.secondtask.TrainingFragment"
+        android:label="fragment_training"
+        tools:layout="@layout/fragment_training" >
+        <action
+            android:id="@+id/action_trainingFragment_to_technicalFragment"
+            app:destination="@id/technicalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/technicalFragment"
+        android:name="com.example.secondtask.TechnicalFragment"
+        android:label="fragment_technical"
+        tools:layout="@layout/fragment_technical" />
+</navigation>
