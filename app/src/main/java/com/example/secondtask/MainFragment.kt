@@ -16,7 +16,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         binding = FragmentMainBinding.bind(view)
         binding?.btnToTS?.setOnClickListener{
             val bundle = Bundle()
-            bundle.putString("CLASS_NAME","MAINFRAGMENT")
+            bundle.putString("CLASS_NAME",this.javaClass.toString())
             findNavController().navigate(R.id.action_mainFragment_to_technicalFragment,bundle)
         }
     }

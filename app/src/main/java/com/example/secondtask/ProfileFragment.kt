@@ -16,7 +16,7 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
         binding = FragmentProfileBinding.bind(view)
         binding?.btnToTS?.setOnClickListener{
             val bundle = Bundle()
-            bundle.putString("CLASS_NAME","PROFILEFRAGMENT")
+            bundle.putString("CLASS_NAME",this.javaClass.toString() )
             findNavController().navigate(R.id.action_profileFragment_to_technicalFragment,bundle)
         }
     }

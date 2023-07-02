@@ -15,9 +15,11 @@ class TechnicalFragment : Fragment(R.layout.fragment_technical) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentTechnicalBinding.bind(view)
+        val name = arguments?.getString("CLASS_NAME").toString()
+        if(name!=null){
+            Snackbar.make(binding?.root!!,name,Snackbar.LENGTH_LONG).show()
+        }
         binding?.btnBack?.setOnClickListener {
-            val arg = arguments?.getString("CLASS_NAME").toString()
-            Snackbar.make(binding?.root!!,arg,Snackbar.LENGTH_LONG).show()
             findNavController().navigateUp()
         }
     }
