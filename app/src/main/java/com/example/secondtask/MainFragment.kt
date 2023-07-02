@@ -15,14 +15,21 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentMainBinding.bind(view)
         binding?.btnToTS?.setOnClickListener{
-            val bundle = Bundle()
-            bundle.putString("CLASS_NAME",this.javaClass.toString())
-            findNavController().navigate(R.id.action_mainFragment_to_technicalFragment,bundle)
+            findNavController().navigate(R.id.action_mainFragment_to_technicalFragment,
+                createBundle(this.javaClass.toString())
+            )
         }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         binding = null
+    }
+    companion object{
+        fun createBundle(name:String):Bundle{
+            val bundle = Bundle()
+            bundle.putString("CLASS_NAME",name)
+            return bundle
+        }
     }
 }

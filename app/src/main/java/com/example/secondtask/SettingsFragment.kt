@@ -15,9 +15,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentSettingsBinding.bind(view)
         binding?.btnToTS?.setOnClickListener{
-            val bundle = Bundle()
-            bundle.putString("CLASS_NAME",this.javaClass.toString())
-            findNavController().navigate(R.id.action_settingsFragment_to_technicalFragment,bundle)
+            findNavController().navigate(R.id.action_settingsFragment_to_technicalFragment,MainFragment.createBundle(this.javaClass.toString()))
         }
     }
 

@@ -15,9 +15,7 @@ class TrainingFragment : Fragment(R.layout.fragment_training) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentTrainingBinding.bind(view)
         binding?.btnToTS?.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("CLASS_NAME",this.javaClass.toString())
-            findNavController().navigate(R.id.action_trainingFragment_to_technicalFragment,bundle)
+            findNavController().navigate(R.id.action_trainingFragment_to_technicalFragment,MainFragment.createBundle(this.javaClass.toString()))
         }
     }
 

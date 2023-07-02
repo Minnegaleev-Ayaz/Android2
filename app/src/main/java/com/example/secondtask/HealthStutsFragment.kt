@@ -15,9 +15,7 @@ class HealthStutsFragment : Fragment(R.layout.fragment_health_stuts) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentHealthStutsBinding.bind(view)
         binding?.btnToTS?.setOnClickListener{
-            val bundle = Bundle()
-            bundle.putString("CLASS_NAME",this.javaClass.toString())
-            findNavController().navigate(R.id.action_healthStutsFragment_to_technicalFragment,bundle)
+            findNavController().navigate(R.id.action_healthStutsFragment_to_technicalFragment,MainFragment.createBundle(this.javaClass.toString()))
         }
     }
 
