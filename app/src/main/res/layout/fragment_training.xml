@@ -11,6 +11,12 @@
         android:textSize="24dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginVertical="60dp"
-        android:text="Trainingrament" />
-
+        android:text="TrainingFgrament" />
+    <Button
+        android:id="@+id/btnToTS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginVertical="300dp"
+        android:text="Go to TS" />
 </FrameLayout>

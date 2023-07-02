@@ -10,7 +10,7 @@
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_mainFragment_to_technicalFragment2"
+            android:id="@+id/action_mainFragment_to_technicalFragment"
             app:destination="@id/technicalFragment" />
     </fragment>
     <fragment
@@ -20,9 +20,6 @@
         tools:layout="@layout/fragment_health_stuts" >
         <action
             android:id="@+id/action_healthStutsFragment_to_technicalFragment"
-            app:destination="@id/technicalFragment" />
-        <action
-            android:id="@+id/action_healthStutsFragment_to_technicalFragment2"
             app:destination="@id/technicalFragment" />
     </fragment>
     <fragment
